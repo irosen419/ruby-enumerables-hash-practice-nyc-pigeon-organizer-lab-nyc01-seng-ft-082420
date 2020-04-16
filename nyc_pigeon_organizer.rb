@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  pigeon_list.each_with_index do |(key, value), index|
+  pigeon_list.map do |key, value|
     pigeon_list[key] = Hash[attributes.collect { |item| [item, []] } ]
   end
   
